@@ -1,0 +1,857 @@
+{
+    "protein": {
+        "pass": [
+            {
+                "name": "Naturaltein Whey Protein Isoboost",
+                "link": "https://www.trustified.in/passandfail/naturalteinisoboost"
+            },
+            {
+                "name": "The Whole Truth Protein Bar High Protein Bar",
+                "link": "https://www.trustified.in/passandfail/the-whole-truth-protein-bar-main"
+            },
+            {
+                "name": "MuscleBlaze Whey Gold 100% Whey",
+                "link": "https://www.trustified.in/passandfail/muscleblaze-whey-gold-main"
+            },
+            {
+                "name": "Superyou Fermented Yeast Protein",
+                "link": "https://www.trustified.in/passandfail/superyouyeastprotein"
+            },
+            {
+                "name": "Tata 1mg Ultra Clean Whey Protein",
+                "link": "https://www.trustified.in/passandfail/tata1mgcleanwhey"
+            },
+            {
+                "name": "Trubasics Clean Whey Protein",
+                "link": "https://www.trustified.in/passandfail/truebasiccleanisolate"
+            },
+            {
+                "name": "Nutrova Whey Protein Isolate Blend",
+                "link": "https://www.trustified.in/passandfail/nutrovaisolateblend"
+            },
+            {
+                "name": "Explosive Whey Elite Series Whey Protein",
+                "link": "https://www.trustified.in/passandfail/explosivewhey"
+            },
+            {
+                "name": "Fuelled Whey Protein Powder",
+                "link": "https://www.trustified.in/passandfail/fuelledwheyprotein"
+            },
+            {
+                "name": "Fuelone Fuel One Whey Iso-Max",
+                "link": "https://www.trustified.in/passandfail/fuelone-main"
+            },
+            {
+                "name": "Jan Aushadhi 100% Whey Protein",
+                "link": "https://www.trustified.in/passandfail/Janaushadhiwhey"
+            },
+            {
+                "name": "Alpino Supernatural Peanut Protein",
+                "link": "https://www.trustified.in/passandfail/alpinopeanutprotein"
+            },
+            {
+                "name": "Nutrabox 100% Soy Isolate",
+                "link": "https://www.trustified.in/passandfail/nutraboxsoyprotein"
+            },
+            {
+                "name": "Trubasics Clean Whey Protein",
+                "link": "https://www.trustified.in/passandfail/cleanwheyprotein"
+            },
+            {
+                "name": "OSOAA Impact Whey",
+                "link": "https://www.trustified.in/passandfail/OSOAAimpactwhey"
+            },
+            {
+                "name": "NATURALTEIN Max Whey Protein",
+                "link": "https://www.trustified.in/passandfail/maxwheyprotein"
+            },
+            {
+                "name": "XLR8 Performance Whey",
+                "link": "https://www.trustified.in/passandfail/xlr8performancewhey"
+            },
+            {
+                "name": "Asitis Atom Power Whey Protein",
+                "link": "https://www.trustified.in/passandfail/atompowerwhey"
+            },
+            {
+                "name": "XLR8 Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/Xlr8wheyproteintest"
+            },
+            {
+                "name": "Musclenectar Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/musclenectarisolatetest3"
+            },
+            {
+                "name": "YogaBar ProClean Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/yogabarcleanwhey"
+            },
+            {
+                "name": "Trunativ Whey Protein Pro Blend",
+                "link": "https://www.trustified.in/passandfail/trunativwheyblendpro"
+            },
+            {
+                "name": "Muscleblaze Biozyme Gold 100% Whey",
+                "link": "https://www.trustified.in/passandfail/biozymegoldwhey100"
+            },
+            {
+                "name": "Avvatar 100% Performance Whey",
+                "link": "https://www.trustified.in/passandfail/avvatarperformance100"
+            },
+            {
+                "name": "Blackbeast Whey Protein\u00a0Puregold",
+                "link": "https://www.trustified.in/passandfail/blackbeastwheyprotein"
+            },
+            {
+                "name": "HealthFarm Isopro Zero 100% Pure Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/healthfarmisopro"
+            },
+            {
+                "name": "Ripped up nutrition Muscle Whey",
+                "link": "https://www.trustified.in/passandfail/runmusclewhey"
+            },
+            {
+                "name": "The Whole Truth Raw Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/twtrawwheyisolate"
+            },
+            {
+                "name": "The Whole Truth Concentrate Raw Whey Protein Concentrate",
+                "link": "https://www.trustified.in/passandfail/the-whole-truth-concentrate"
+            },
+            {
+                "name": "Naturaltein Plant Protein Plant Protein",
+                "link": "https://www.trustified.in/passandfail/naturaltein-plant-protein"
+            },
+            {
+                "name": "Nakpro Plant Protein Plant Protein",
+                "link": "https://www.trustified.in/passandfail/nakproplantprotein"
+            },
+            {
+                "name": "Muscleblaze Biozyme\u00a0PR Biozyme Whey PR",
+                "link": "https://www.trustified.in/passandfail/biozymewheypr"
+            },
+            {
+                "name": "Nutrabay Gold 100% Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/nutrabaygoldwheyprotein"
+            },
+            {
+                "name": "Nakpro Impact Whey Protein Impact Whey Protein",
+                "link": "https://www.trustified.in/passandfail/nakproimpactwheyprotein"
+            },
+            {
+                "name": "Avvatar Nitro Iso Whey Nitro Iso Whey",
+                "link": "https://www.trustified.in/passandfail/avvatar-nitro-iso-whey"
+            },
+            {
+                "name": "Bgreen Plant Protein",
+                "link": "https://www.trustified.in/passandfail/bgreenplantprotein"
+            },
+            {
+                "name": "Ripped Up Nutrition Whey Pro",
+                "link": "https://www.trustified.in/passandfail/ripped-up-nutrition-"
+            },
+            {
+                "name": "MuscleBlaze Raw Whey Protein 80% Raw Whey Protein 80%",
+                "link": "https://www.trustified.in/passandfail/muscleblaze-raw-whey-protein-80%25"
+            },
+            {
+                "name": "Avvatar Nitro Iso Whey Test 1 Nitro Iso Whey",
+                "link": "https://www.trustified.in/passandfail/avvatar-nitro-iso-whey-test1"
+            },
+            {
+                "name": "The Whole Truth Protein Bar High Protein Bar",
+                "link": "https://www.trustified.in/passandfail/the-whole-truth-protein-bar"
+            },
+            {
+                "name": "MuscleBlaze Whey Gold Whey Gold 100% Whey",
+                "link": "https://www.trustified.in/passandfail/muscleblaze-whey-gold"
+            },
+            {
+                "name": "The Whole Truth Cleanest Protein",
+                "link": "https://www.trustified.in/passandfail/the-whole-truth"
+            },
+            {
+                "name": "Nutrabay Gold 100% Whey Protein Concentrate",
+                "link": "https://www.trustified.in/passandfail/nutrabay-gold"
+            },
+            {
+                "name": "The Whole Truth Raw Isolate Raw Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/the-whole-truth-raw-isolate"
+            },
+            {
+                "name": "Muscleblaze Biozyme\u00a0PR Biozyme Whey PR",
+                "link": "https://www.trustified.in/passandfail/muscleblaze-biozyme%C2%A0pr"
+            },
+            {
+                "name": "The Whole Truth Concentrate Raw Whey Protein Concentrate",
+                "link": "https://www.trustified.in/passandfail/thewholetruthconcentratetest1"
+            },
+            {
+                "name": "RUN Muscle Whey Muscle Whey",
+                "link": "https://www.trustified.in/passandfail/run--muscle-whey"
+            },
+            {
+                "name": "Nakpro Plant Protein Plant Protein",
+                "link": "https://www.trustified.in/passandfail/nakproplantproteintest1"
+            },
+            {
+                "name": "Naturaltein Plant Protein Plant Protein",
+                "link": "https://www.trustified.in/passandfail/naturalteinplantproteintest1"
+            },
+            {
+                "name": "Fuelone Fuel One Whey Iso-Max",
+                "link": "https://www.trustified.in/passandfail/fuelone"
+            },
+            {
+                "name": "HealthFarm Test 1 Muscle Whey",
+                "link": "https://www.trustified.in/passandfail/healthfarm-"
+            },
+            {
+                "name": "Ripped Up Nutrition Whey Pro Test 1 Whey Pro",
+                "link": "https://www.trustified.in/passandfail/ripped-up-nutrition-whey-pro-test-1"
+            },
+            {
+                "name": "Maxener Wellness Nitro Whey Test 1 Nitro Whey +",
+                "link": "https://www.trustified.in/passandfail/maxener-wellness-nitro-whey-test-1"
+            },
+            {
+                "name": "Fuel One Whey Max",
+                "link": "https://www.trustified.in/passandfail/fuel-one-whey-max"
+            },
+            {
+                "name": "Musclenectar 100% Isolate Whey Protein",
+                "link": "https://www.trustified.in/passandfail/musclenectar"
+            },
+            {
+                "name": "Maxener Wellness Pro Whey X",
+                "link": "https://www.trustified.in/passandfail/maxener-wellness"
+            },
+            {
+                "name": "ASITIS Whey Isolate ATOM Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/asitis--whey-isolate"
+            },
+            {
+                "name": "NATURALTEIN Concentrate Whey Protein Concentrate",
+                "link": "https://www.trustified.in/passandfail/naturaltein-concentrate"
+            },
+            {
+                "name": "XLR8 Whey Protein Concentrate",
+                "link": "https://www.trustified.in/passandfail/xlr8"
+            },
+            {
+                "name": "Nakpro gold Whey Gold",
+                "link": "https://www.trustified.in/passandfail/nakpro-gold"
+            },
+            {
+                "name": "Muscleblaze Biozyme Whey Protein",
+                "link": "https://www.trustified.in/passandfail/muscleblaze"
+            },
+            {
+                "name": "Nakpro Perform Whey",
+                "link": "https://www.trustified.in/passandfail/nakpro-perform-"
+            },
+            {
+                "name": "Nutrabox 100% 100 % Whey Protein",
+                "link": "https://www.trustified.in/passandfail/nutrabox-100%25"
+            },
+            {
+                "name": "Nutrabay Concentrate Whey Protein",
+                "link": "https://www.trustified.in/passandfail/nutrabay"
+            },
+            {
+                "name": "Nutrabox Raw 100 % Raw Whey Protein",
+                "link": "https://www.trustified.in/passandfail/nutrabox-raw"
+            },
+            {
+                "name": "Naturaltein Isolate Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/naturaltein-isolate"
+            },
+            {
+                "name": "ASITIS Concentrate Whey Protein Concentrate 80 %",
+                "link": "https://www.trustified.in/passandfail/asitis-concentrate"
+            },
+            {
+                "name": "Nakpro Isolate Whey Platinum Isolate",
+                "link": "https://www.trustified.in/passandfail/nakpro--isolate"
+            },
+            {
+                "name": "Musclenectar Whey Blend 100% Whey Protein Powder",
+                "link": "https://www.trustified.in/passandfail/musclenectar-whey-blend"
+            },
+            {
+                "name": "ASITIS atom blend Atom Whey Protein Enzyme Blend",
+                "link": "https://www.trustified.in/passandfail/asitis-atom-blend"
+            },
+            {
+                "name": "Avvatar Blend Avvatar Whey Blend",
+                "link": "https://www.trustified.in/passandfail/avvatar-blend"
+            },
+            {
+                "name": "Biozyme Performance Whey",
+                "link": "https://www.trustified.in/passandfail/biozyme-performance-whey"
+            },
+            {
+                "name": "Nutrabox Ripped 100% Whey Isolate",
+                "link": "https://www.trustified.in/passandfail/nutrabox-ripped"
+            }
+        ],
+        "fail": [
+            {
+                "name": "Muscle Dominator Ripped Whey",
+                "link": "https://www.trustified.in/passandfail/muscledominator"
+            },
+            {
+                "name": "Muscle Club Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/muscleclubwhey"
+            },
+            {
+                "name": "Total Nutrition Whey Protein",
+                "link": "https://www.trustified.in/passandfail/totalnutrition"
+            },
+            {
+                "name": "ESN Lean Whey",
+                "link": "https://www.trustified.in/passandfail/esnleanwhey"
+            },
+            {
+                "name": "Muscle Gears Advanced Whey Protein",
+                "link": "https://www.trustified.in/passandfail/musclegearswhey"
+            },
+            {
+                "name": "Trikut Premium Whey Protein",
+                "link": "https://www.trustified.in/passandfail/trikutwheyprotein"
+            },
+            {
+                "name": "Coreblaze Nutrition Iso Core Whey",
+                "link": "https://www.trustified.in/passandfail/coreblaze-nutrition"
+            },
+            {
+                "name": "Wheymill 100% Whey Protein",
+                "link": "https://www.trustified.in/passandfail/wheymill"
+            },
+            {
+                "name": "MyPro 100% Plant Protein",
+                "link": "https://www.trustified.in/passandfail/mypro"
+            },
+            {
+                "name": "Getmymettle Alpha Whey Protein",
+                "link": "https://www.trustified.in/passandfail/getmymettle"
+            },
+            {
+                "name": "Adreno Nutraceuticals Performance Whey Protein",
+                "link": "https://www.trustified.in/passandfail/adreno-nutraceuticals"
+            },
+            {
+                "name": "Bigmuscles Gold Whey Premium Gold Whey",
+                "link": "https://www.trustified.in/passandfail/bigmuscles-gold-whey"
+            },
+            {
+                "name": "Muscle Asylum Muscle Whey",
+                "link": "https://www.trustified.in/passandfail/muscle-asylum"
+            },
+            {
+                "name": "Bigmuscles Nutrition 100 % Performance Whey",
+                "link": "https://www.trustified.in/passandfail/bigmuscles-nutrition"
+            }
+        ],
+        "expired": [
+            {
+                "name": "Gentle Beast Multi Flavoured Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/gentlebeastwheyprotein"
+            },
+            {
+                "name": "HealthFarm Muscle Whey Muscle Whey",
+                "link": "https://www.trustified.in/passandfail/healthfarm-"
+            },
+            {
+                "name": "Maxener Wellness Nitro Whey Nitro Whey +",
+                "link": "https://www.trustified.in/passandfail/maxener-wellness-nitro-whey"
+            },
+            {
+                "name": "Maxener Wellness Whey Iso X Whey Iso X",
+                "link": "https://www.trustified.in/passandfail/maxener-wellness-whey-iso-x"
+            },
+            {
+                "name": "HealthFarm Isopro Isopro Zero 100% Pure Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/healthfarm-isopro"
+            },
+            {
+                "name": "NAKPRO WheyZyme Whey Zyme",
+                "link": "https://www.trustified.in/passandfail/nakpro-wheyzyme"
+            },
+            {
+                "name": "Trueforma Prebiotic Whey",
+                "link": "https://www.trustified.in/passandfail/trueforma"
+            },
+            {
+                "name": "XLR8 Isolate Skysolate",
+                "link": "https://www.trustified.in/passandfail/xlr8-isolate"
+            },
+            {
+                "name": "Amul Whey Protein",
+                "link": "https://www.trustified.in/passandfail/amul"
+            },
+            {
+                "name": "Ritebite Max Protein Choco Almond Bar",
+                "link": "https://www.trustified.in/passandfail/ritebite"
+            },
+            {
+                "name": "Trunativ Raw Whey Isolate RAW Whey Protein Isolate",
+                "link": "https://www.trustified.in/passandfail/trunativ-raw-whey-isolate"
+            }
+        ]
+    },
+    "other": {
+        "pass": [
+            {
+                "name": "Tata Salt",
+                "link": "https://www.trustified.in/passandfail/tatasalt"
+            },
+            {
+                "name": "Kissan Fresh Tomato Ketchup",
+                "link": "https://www.trustified.in/passandfail/kissanketchup"
+            },
+            {
+                "name": "Nestle Nanpro Stage 1",
+                "link": "https://www.trustified.in/passandfail/nestlenanpro"
+            },
+            {
+                "name": "Hershey\u2019s Unsweetened 100 % Cocoa Powder",
+                "link": "https://www.trustified.in/passandfail/Hersheyscocoapowder"
+            },
+            {
+                "name": "Kellogg\u2019s Corn Flakes",
+                "link": "https://www.trustified.in/passandfail/kellogscornflakes"
+            },
+            {
+                "name": "Baidyanath Isabgol",
+                "link": "https://www.trustified.in/passandfail/isabgol"
+            },
+            {
+                "name": "Nescafe Classic",
+                "link": "https://www.trustified.in/passandfail/nescafeclassic"
+            },
+            {
+                "name": "Amul Cheese Cubes",
+                "link": "https://www.trustified.in/passandfail/amulcheesecubes"
+            },
+            {
+                "name": "Haldiram\u2019s Salted Peanuts",
+                "link": "https://www.trustified.in/passandfail/haldiramspeanuts"
+            },
+            {
+                "name": "Muscleblaze Pre-Workout 200 Xtreme",
+                "link": "https://www.trustified.in/passandfail/mbxtremepreworkout"
+            },
+            {
+                "name": "Amul Butter",
+                "link": "https://www.trustified.in/passandfail/amulbutter"
+            },
+            {
+                "name": "Amul Taaza Milk",
+                "link": "https://www.trustified.in/passandfail/amultaazamilk"
+            },
+            {
+                "name": "Epigamia Turbo 50 g",
+                "link": "https://www.trustified.in/passandfail/epigamiayoughurt50"
+            },
+            {
+                "name": "Amul Paneer",
+                "link": "https://www.trustified.in/passandfail/amulpaneer"
+            },
+            {
+                "name": "Naturaltein Pure 07 Preworkout",
+                "link": "https://www.trustified.in/passandfail/naturalteinpure07"
+            },
+            {
+                "name": "Abott Pediasure 7+",
+                "link": "https://www.trustified.in/passandfail/abottpediasure"
+            },
+            {
+                "name": "Fortune Soya Chunks",
+                "link": "https://www.trustified.in/passandfail/fortunesoyachunks"
+            },
+            {
+                "name": "Unived Plant based Ovegha",
+                "link": "https://www.trustified.in/passandfail/plantbasedovegha"
+            },
+            {
+                "name": "Cadbury Bournville Intense 70 % Dark",
+                "link": "https://www.trustified.in/passandfail/cadburybournville70"
+            },
+            {
+                "name": "Cadbury Bournville Classic 50 % Dark",
+                "link": "https://www.trustified.in/passandfail/cadburybournville50"
+            },
+            {
+                "name": "Amul Bitter Intense Dark 90 %",
+                "link": "https://www.trustified.in/passandfail/amul90chocolate"
+            },
+            {
+                "name": "Amul Bitter Chocolate 75 %",
+                "link": "https://www.trustified.in/passandfail/amul75chocolate"
+            },
+            {
+                "name": "Amul Dark Chocolate 55 %",
+                "link": "https://www.trustified.in/passandfail/amul55chocolate"
+            },
+            {
+                "name": "Naturaltein Ultimate Vegan Omega 3",
+                "link": "https://www.trustified.in/passandfail/naturalteinveganomega"
+            },
+            {
+                "name": "Britannia 100 % Whole Wheat Bread",
+                "link": "https://www.trustified.in/passandfail/britanniawholebread"
+            },
+            {
+                "name": "Naturaltein Magnesium Glycinate Magnesium Glycinate 550mg",
+                "link": "https://www.trustified.in/passandfail/naturalteinmagnesiumglycinate"
+            },
+            {
+                "name": "Lindt 70% Cocoa 70% Cocoa",
+                "link": "https://www.trustified.in/passandfail/lindtchocolate70"
+            },
+            {
+                "name": "Lindt 85% Cocoa 85 % Cocoa",
+                "link": "https://www.trustified.in/passandfail/lindtchocolate85"
+            },
+            {
+                "name": "Alpino Natural Peanut Butter",
+                "link": "https://www.trustified.in/passandfail/alpinonaturalpeanutbutter"
+            },
+            {
+                "name": "Avvatar Mass Gainer Test 1 Avvatar Mass Gainer",
+                "link": "https://www.trustified.in/passandfail/avvatar-mass-gainer-test-1"
+            },
+            {
+                "name": "NATURALTEIN Omega 3 Ultimate Omega 3",
+                "link": "https://www.trustified.in/passandfail/naturaltein-omega-3"
+            },
+            {
+                "name": "Naturaltein The Good Prot The Good Prot - Chocolate",
+                "link": "https://www.trustified.in/passandfail/naturaltein-the-good-prot"
+            },
+            {
+                "name": "Avvatar Mass Gainer",
+                "link": "https://www.trustified.in/passandfail/avvatar-mass-gainer"
+            },
+            {
+                "name": "Avvatar Muscle Gainer",
+                "link": "https://www.trustified.in/passandfail/avvatar-muscle-gainer"
+            },
+            {
+                "name": "Musclenectar Omega Omega-3",
+                "link": "https://www.trustified.in/passandfail/musclenectar-omega"
+            },
+            {
+                "name": "Avvatar Isorich",
+                "link": "https://www.trustified.in/passandfail/avvatar-isorich"
+            },
+            {
+                "name": "Muscleblaze Iso Zero MB Biozyme Iso Zero",
+                "link": "https://www.trustified.in/passandfail/muscleblaze-iso-zero"
+            }
+        ],
+        "fail": [
+            {
+                "name": "VS Mani & Co Signature Instant Coffee",
+                "link": "https://www.trustified.in/passandfail/vsmanicoffee"
+            },
+            {
+                "name": "Go Zero Madagascar Chocobar",
+                "link": "https://www.trustified.in/passandfail/gozerochocobar"
+            },
+            {
+                "name": "Bevzilla Premium Coffee",
+                "link": "https://www.trustified.in/passandfail/bevzillapremiumcoffee"
+            },
+            {
+                "name": "Bevzilla Premium Classic Coffee",
+                "link": "https://www.trustified.in/passandfail/Bevzillaclassiccoffee"
+            },
+            {
+                "name": "Jivo Extra Light Olive Oil",
+                "link": "https://www.trustified.in/passandfail/jivooliveoil"
+            },
+            {
+                "name": "Get-A-Way Belgian Chocolate",
+                "link": "https://www.trustified.in/passandfail/Belgianchocolate"
+            },
+            {
+                "name": "Daawat Brown Rice",
+                "link": "https://www.trustified.in/passandfail/daawatrice"
+            },
+            {
+                "name": "Haleup Vegan Omega 3",
+                "link": "https://www.trustified.in/passandfail/haleupomega3"
+            },
+            {
+                "name": "Zaveda Vegan Omega 3",
+                "link": "https://www.trustified.in/passandfail/zavedaomega3"
+            },
+            {
+                "name": "The Butternut Co Natural Peanut Butter Creamy",
+                "link": "https://www.trustified.in/passandfail/thebutternutcopeanut"
+            },
+            {
+                "name": "Nutriquint Melatonin 10 mg Gummies",
+                "link": "https://www.trustified.in/passandfail/nutriquintmelatonin"
+            },
+            {
+                "name": "Nutrijet Magnesium 3 in 1",
+                "link": "https://www.trustified.in/passandfail/nutrijetmagnesium3in1"
+            },
+            {
+                "name": "RawRX Vegan Omega 3",
+                "link": "https://www.trustified.in/passandfail/rawrxveganomega"
+            },
+            {
+                "name": "Amyleord Glutathione with Vit C",
+                "link": "https://www.trustified.in/passandfail/amyleordglutathione"
+            },
+            {
+                "name": "Kelloggs Muesli 0% Added Sugar",
+                "link": "https://www.trustified.in/passandfail/kelloggsmuesli"
+            },
+            {
+                "name": "Nutrela Soya Chunks",
+                "link": "https://www.trustified.in/passandfail/nutrelasoyachunks"
+            },
+            {
+                "name": "Zeroharm Vegan Omega",
+                "link": "https://www.trustified.in/passandfail/zeroharmomega"
+            },
+            {
+                "name": "One Science Nutrition Iso Gold,",
+                "link": "https://www.trustified.in/passandfail/onesciencenutrition"
+            },
+            {
+                "name": "DiSano Peanut Butter",
+                "link": "https://www.trustified.in/passandfail/disanopeanutbutter"
+            },
+            {
+                "name": "Dr.Oetkar FunFoods Funfoods Peanut Butter",
+                "link": "https://www.trustified.in/passandfail/funfoodspeanutbutter"
+            },
+            {
+                "name": "Sundrop Peanut Butter",
+                "link": "https://www.trustified.in/passandfail/sundroppeanutbutter"
+            },
+            {
+                "name": "Healthveda Magnesium Glycinate",
+                "link": "https://www.trustified.in/passandfail/healthveda"
+            },
+            {
+                "name": "Healthyhey Magnesium Glycinate",
+                "link": "https://www.trustified.in/passandfail/healthhey"
+            },
+            {
+                "name": "Wow Algae Rich Omega 3",
+                "link": "https://www.trustified.in/passandfail/wow"
+            },
+            {
+                "name": "WILD BUCK Hyper Charge Pre-X4",
+                "link": "https://www.trustified.in/passandfail/wild-buck-"
+            },
+            {
+                "name": "Carbamide Forte Triple Strength Omega 3",
+                "link": "https://www.trustified.in/passandfail/carbamide-forte"
+            },
+            {
+                "name": "Kobra Labs The Bull Mass Gainer",
+                "link": "https://www.trustified.in/passandfail/kobra-labs"
+            }
+        ],
+        "expired": [
+            {
+                "name": "GlaxoSmithKline - GSK Becadexamin",
+                "link": "https://www.trustified.in/passandfail/glaxosmithkline---gsk"
+            }
+        ]
+    },
+    "fish oil": {
+        "pass": [
+            {
+                "name": "Nutrabay Pro Fish Oil Omega 3",
+                "link": "https://www.trustified.in/passandfail/nutrabay-pro-fish-oil-omega-main"
+            },
+            {
+                "name": "Nutrabay Pro Fish Oil Omega 3",
+                "link": "https://www.trustified.in/passandfail/nutrabay-pro-fish-oil-omega-3"
+            },
+            {
+                "name": "Muscleblaze Omega 3 Fish Oil 1000\u00a0mg",
+                "link": "https://www.trustified.in/passandfail/muscleblaze-omega-3"
+            }
+        ],
+        "fail": [
+            {
+                "name": "BBetter Omega 3 Fish Oil",
+                "link": "https://www.trustified.in/passandfail/bbetter"
+            },
+            {
+                "name": "Nveda Omega 3 Fish Oil",
+                "link": "https://www.trustified.in/passandfail/nveda"
+            },
+            {
+                "name": "Nirvasa Omega 3 Fish Oil",
+                "link": "https://www.trustified.in/passandfail/nirvasa"
+            },
+            {
+                "name": "Zingavita Omega 3 Fish Oil",
+                "link": "https://www.trustified.in/passandfail/zingavita"
+            }
+        ],
+        "expired": []
+    },
+    "shilajit": {
+        "pass": [
+            {
+                "name": "Koshaveda Shilajit Pro",
+                "link": "https://www.trustified.in/passandfail/koshaveda-shilajit-main"
+            },
+            {
+                "name": "Koshaveda Shilajit Pro",
+                "link": "https://www.trustified.in/passandfail/koshaveda-shilajit-pro"
+            }
+        ],
+        "fail": [],
+        "expired": []
+    },
+    "creatine": {
+        "pass": [
+            {
+                "name": "Smash Micronised Creatine",
+                "link": "https://www.trustified.in/passandfail/smashcreatine"
+            },
+            {
+                "name": "Asitis Creasure\u00ae 100% Creatine Monohydrate",
+                "link": "https://www.trustified.in/passandfail/creasurecreatinemonohydrate"
+            },
+            {
+                "name": "Avvatar Creatine Monohydrate Creatine Monohydrate",
+                "link": "https://www.trustified.in/passandfail/avvatarcreatinemonohydrate"
+            },
+            {
+                "name": "NATURALTEIN Crea Boost Creaboost Creatine Monohydrate",
+                "link": "https://www.trustified.in/passandfail/naturaltein-crea-boost"
+            },
+            {
+                "name": "Asitis atom creatine Creatine Monohydrate",
+                "link": "https://www.trustified.in/passandfail/asitis-atom-creatine"
+            },
+            {
+                "name": "Wellversed Micronised Creatine Monohydrate",
+                "link": "https://www.trustified.in/passandfail/wellversed"
+            },
+            {
+                "name": "Muscleblaze Creatine Pure Creatine Monohydrate",
+                "link": "https://www.trustified.in/passandfail/muscleblaze-creatine-"
+            },
+            {
+                "name": "Nutrabay Creatine Creatine Monohydrate",
+                "link": "https://www.trustified.in/passandfail/nutrabay-creatine-"
+            },
+            {
+                "name": "Nakpro Nutrition Creatine Monohydrate",
+                "link": "https://www.trustified.in/passandfail/nakpro-nutrition"
+            },
+            {
+                "name": "Naturaltein Creatine 100% Creatine Monohydrate",
+                "link": "https://www.trustified.in/passandfail/naturaltein-creatine"
+            }
+        ],
+        "fail": [],
+        "expired": [
+            {
+                "name": "Healthfarm Creatine Monohydrate Creatine Monohydrate",
+                "link": "https://www.trustified.in/passandfail/healthfarm-creatine-monohydrate"
+            },
+            {
+                "name": "Athlab CREAPOWER CREATINE MONOHYDRATE",
+                "link": "https://www.trustified.in/passandfail/athlab"
+            }
+        ]
+    },
+    "ghee": {
+        "pass": [],
+        "fail": [
+            {
+                "name": "Aashirvaad Svasti Pure Cow Ghee",
+                "link": "https://www.trustified.in/passandfail/ashirvaadghee"
+            },
+            {
+                "name": "Country Delight Desi Danedar Ghee",
+                "link": "https://www.trustified.in/passandfail/Countrydelightghee"
+            },
+            {
+                "name": "Amul Cow Ghee",
+                "link": "https://www.trustified.in/passandfail/amulghee"
+            }
+        ],
+        "expired": []
+    },
+    "multivitamin": {
+        "pass": [
+            {
+                "name": "Muscleblaze Multivitamin Biozyme Daily Multivitamin",
+                "link": "https://www.trustified.in/passandfail/muscleblaze-multivitamintest"
+            },
+            {
+                "name": "Centrum Men Multivitamin",
+                "link": "https://www.trustified.in/passandfail/centrummenmultivitamin"
+            },
+            {
+                "name": "Muscleblaze Multivitamin Biozyme Daily Multivitamin",
+                "link": "https://www.trustified.in/passandfail/muscleblaze-multivitamin"
+            }
+        ],
+        "fail": [
+            {
+                "name": "Boldfit Vitamin D3",
+                "link": "https://www.trustified.in/passandfail/boldfit-vitamin-d3"
+            },
+            {
+                "name": "PATANJALI NUTRELA Nutrela Daily Active Multivitamin",
+                "link": "https://www.trustified.in/passandfail/patanjali-nutrela"
+            },
+            {
+                "name": "Himalayan Organics Vitamin C",
+                "link": "https://www.trustified.in/passandfail/himalayan-organics-vitamin-c"
+            }
+        ],
+        "expired": [
+            {
+                "name": "Tata 1MG Calcium + Vitamin\u00a0D3",
+                "link": "https://www.trustified.in/passandfail/tata1mgvitaminc"
+            },
+            {
+                "name": "Alkem Laboratories A to Z Multivitamins",
+                "link": "https://www.trustified.in/passandfail/alkem-laboratories"
+            }
+        ]
+    },
+    "oats": {
+        "pass": [
+            {
+                "name": "Saffola Oats",
+                "link": "https://www.trustified.in/passandfail/saffolaoats"
+            }
+        ],
+        "fail": [],
+        "expired": [
+            {
+                "name": "Quaker Oats",
+                "link": "https://www.trustified.in/passandfail/quaker"
+            }
+        ]
+    },
+    "bcaa/eaa": {
+        "pass": [],
+        "fail": [
+            {
+                "name": "Doctor's Choice EAA",
+                "link": "https://www.trustified.in/passandfail/doctor's-choice-eaa"
+            }
+        ],
+        "expired": []
+    }
+}
