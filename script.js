@@ -269,26 +269,107 @@ document.addEventListener('DOMContentLoaded', () => {
         stats.notHealthy.textContent = notHealthy;
         stats.pending.textContent = pending;
 
-        // Update Chart Gradient
+        // Update Chart with SVG segments
         if (total > 0) {
             const safeP = (safe / total) * 100;
             const notHealthyP = (notHealthy / total) * 100;
             const failP = (fail / total) * 100;
-            // pending is remainder
+            const pendingP = (pending / total) * 100;
 
-            // Calculate stops
-            const stop1 = safeP;
-            const stop2 = safeP + notHealthyP;
-            const stop3 = safeP + notHealthyP + failP;
-
-            const chart = document.getElementById('statsChart');
-            chart.style.background = `conic-gradient(
-                var(--neon-green) 0% ${stop1}%,
-                #ffb700 ${stop1}% ${stop2}%,
-                var(--neon-red) ${stop2}% ${stop3}%,
-                var(--neon-blue) ${stop3}% 100%
-            )`;
+            drawPieChart([
+                { percentage: safeP, color: '#00ffa3', status: 'pass', label: 'Safe/Pass' },
+                { percentage: notHealthyP, color: '#ffb700', status: 'not_healthy', label: 'Not Healthy' },
+                { percentage: failP, color: '#ff4d4d', status: 'fail', label: 'Fail/Hazard' },
+                { percentage: pendingP, color: '#00d2ff', status: 'pending', label: 'Under Review' }
+            ]);
         }
+    }
+
+    // Draw interactive SVG pie chart
+    function drawPieChart(segments) {
+        const chart = document.getElementById('statsChart');
+        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('viewBox', '0 0 200 200');
+        svg.setAttribute('width', '100%');
+        svg.setAttribute('height', '100%');
+        svg.style.transform = 'rotate(-90deg)';
+
+        const centerX = 100;
+        const centerY = 100;
+        const radius = 90;
+        const innerRadius = 72; // For donut shape
+
+        let currentAngle = 0;
+
+        segments.forEach((segment) => {
+            if (segment.percentage === 0) return;
+
+            const angle = (segment.percentage / 100) * 360;
+            const endAngle = currentAngle + angle;
+
+            // Create path for outer arc
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            const pathData = createDonutSegment(centerX, centerY, radius, innerRadius, currentAngle, endAngle);
+
+            path.setAttribute('d', pathData);
+            path.setAttribute('fill', segment.color);
+            path.setAttribute('class', 'pie-segment');
+            path.setAttribute('data-status', segment.status);
+
+            // Click to filter
+            path.addEventListener('click', function() {
+                filterByStatus(segment.status);
+            });
+
+            svg.appendChild(path);
+            currentAngle = endAngle;
+        });
+
+        // Remove old SVG if it exists, keeping the center element intact
+        const existingSvg = chart.querySelector('svg');
+        if (existingSvg) {
+            chart.removeChild(existingSvg);
+        }
+        chart.insertBefore(svg, chart.firstChild);
+
+        // Add click listener to center to reset filter (if not already added)
+        const centerDiv = chart.querySelector('.chart-center');
+        if (centerDiv && !centerDiv.hasAttribute('data-click-listener')) {
+            centerDiv.addEventListener('click', function() {
+                activeFilter = 'all';
+                searchInput.value = '';
+                filterData();
+                updateChartHighlight();
+                window.scrollTo({ top: document.getElementById('resultsGrid').offsetTop - 100, behavior: 'smooth' });
+            });
+            centerDiv.setAttribute('data-click-listener', 'true');
+        }
+    }
+
+    // Helper function to create SVG path for donut segment
+    function createDonutSegment(cx, cy, outerRadius, innerRadius, startAngle, endAngle) {
+        const startRadians = (startAngle * Math.PI) / 180;
+        const endRadians = (endAngle * Math.PI) / 180;
+
+        const outerStartX = cx + outerRadius * Math.cos(startRadians);
+        const outerStartY = cy + outerRadius * Math.sin(startRadians);
+        const outerEndX = cx + outerRadius * Math.cos(endRadians);
+        const outerEndY = cy + outerRadius * Math.sin(endRadians);
+
+        const innerStartX = cx + innerRadius * Math.cos(startRadians);
+        const innerStartY = cy + innerRadius * Math.sin(startRadians);
+        const innerEndX = cx + innerRadius * Math.cos(endRadians);
+        const innerEndY = cy + innerRadius * Math.sin(endRadians);
+
+        const largeArcFlag = endAngle - startAngle > 180 ? 1 : 0;
+
+        return `
+            M ${outerStartX} ${outerStartY}
+            A ${outerRadius} ${outerRadius} 0 ${largeArcFlag} 1 ${outerEndX} ${outerEndY}
+            L ${innerEndX} ${innerEndY}
+            A ${innerRadius} ${innerRadius} 0 ${largeArcFlag} 0 ${innerStartX} ${innerStartY}
+            Z
+        `;
     }
 
     // 4. Filtering & Search
@@ -296,7 +377,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const query = searchInput.value.toLowerCase();
 
         const filtered = allProducts.filter(p => {
-            // Search Query only
+            // Status filter
+            if (activeFilter !== 'all' && p.status !== activeFilter) return false;
+
+            // Search Query
             if (query && !p.name.toLowerCase().includes(query) && !p.category.toLowerCase().includes(query)) return false;
             return true;
         });
@@ -304,15 +388,59 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProducts(filtered);
     }
 
+    // Filter by status (called when pie segment is clicked)
+    function filterByStatus(status) {
+        if (activeFilter === status) {
+            // Toggle off if clicking the same filter
+            activeFilter = 'all';
+        } else {
+            activeFilter = status;
+        }
+
+        // Clear search input to show all products with this status
+        searchInput.value = '';
+        filterData();
+
+        // Scroll to results
+        window.scrollTo({ top: document.getElementById('resultsGrid').offsetTop - 100, behavior: 'smooth' });
+
+        // Update visual feedback on chart
+        updateChartHighlight();
+    }
+
+    // Update chart visual feedback for active filter
+    function updateChartHighlight() {
+        const segments = document.querySelectorAll('.pie-segment');
+        segments.forEach(segment => {
+            const segmentStatus = segment.getAttribute('data-status');
+            if (activeFilter === 'all') {
+                segment.style.opacity = '1';
+                segment.style.filter = 'none';
+            } else if (segmentStatus === activeFilter) {
+                segment.style.opacity = '1';
+                segment.style.filter = 'drop-shadow(0 0 10px currentColor)';
+            } else {
+                segment.style.opacity = '0.3';
+                segment.style.filter = 'none';
+            }
+        });
+    }
+
     // Global function for category click
     window.filterByCategory = (category) => {
+        activeFilter = 'all'; // Reset status filter when filtering by category
         searchInput.value = category;
         filterData();
+        updateChartHighlight();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     // Events
-    searchInput.addEventListener('input', filterData);
+    searchInput.addEventListener('input', () => {
+        activeFilter = 'all'; // Reset status filter when searching
+        filterData();
+        updateChartHighlight();
+    });
 
     // Disclaimer Modal Logic
     const modal = document.getElementById('disclaimerModal');
