@@ -66,7 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         source: 'Trustified',
                         category: category,
                         status: 'pass',
-                        link: p.link || 'https://www.trustified.in/passandfail'
+                        link: p.link || 'https://www.trustified.in/passandfail',
+                        testing_date: p.testing_date || null
                     });
                 });
             }
@@ -79,7 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         source: 'Trustified',
                         category: category,
                         status: 'fail',
-                        link: p.link
+                        link: p.link,
+                        testing_date: p.testing_date || null
                     });
                 });
             }
@@ -92,7 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         source: 'Trustified',
                         category: category,
                         status: 'pending',
-                        link: p.link || 'https://www.trustified.in/passandfail'
+                        link: p.link || 'https://www.trustified.in/passandfail',
+                        testing_date: p.testing_date || null
                     });
                 });
             }
@@ -115,7 +118,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         source: 'UnboxHealth',
                         category: cleanCategory,
                         status: 'pass',
-                        link: p.link
+                        link: p.link,
+                        testing_date: p.testing_date || null,
+                        rating: p.rating || null
                     });
                 });
             }
@@ -128,7 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         source: 'UnboxHealth',
                         category: cleanCategory,
                         status: 'not_healthy',
-                        link: p.link
+                        link: p.link,
+                        testing_date: p.testing_date || null,
+                        rating: p.rating || null
                     });
                 });
             }
@@ -141,7 +148,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         source: 'UnboxHealth',
                         category: cleanCategory,
                         status: 'fail',
-                        link: p.link
+                        link: p.link,
+                        testing_date: p.testing_date || null,
+                        rating: p.rating || null
                     });
                 });
             }
@@ -154,7 +163,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         source: 'UnboxHealth',
                         category: cleanCategory,
                         status: 'pending',
-                        link: p.link
+                        link: p.link,
+                        testing_date: p.testing_date || null,
+                        rating: p.rating || null
                     });
                 });
             }
@@ -174,7 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         source: p.source || 'Open Data',
                         category: category,
                         status: 'pass',
-                        link: p.link
+                        link: p.link,
+                        testing_date: p.testing_date || null
                     });
                 });
             }
@@ -186,7 +198,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         source: p.source || 'Open Data',
                         category: category,
                         status: 'fail',
-                        link: p.link
+                        link: p.link,
+                        testing_date: p.testing_date || null
                     });
                 });
             }
@@ -198,7 +211,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         source: p.source || 'Open Data',
                         category: category,
                         status: 'pending',
-                        link: p.link
+                        link: p.link,
+                        testing_date: p.testing_date || null
                     });
                 });
             }
@@ -254,12 +268,15 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <div class="card-header">
                     <span class="card-category" onclick="filterByCategory('${safeCategory}')">${p.category}</span>
+                    ${p.rating ? `<span class="card-rating rating-${p.rating.toLowerCase().replace('+', '-plus')}">${p.rating}</span>` : ''}
                 </div>
                 <h3 class="card-title">${displayName}</h3>
                 
                 <div class="status-indicator">
                     <span class="status-dot"></span> ${statusLabel}
                 </div>
+
+                ${p.testing_date ? `<div class="card-date">Report Date: ${p.testing_date}</div>` : ''}
 
                 <a href="${p.link}" target="_blank" class="view-btn">${btnText}</a>
             `;
