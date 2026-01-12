@@ -4,71 +4,71 @@
     "pass" : [ {
       "name" : "Plant Based Collagen Builder",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/20250128_CLP-Certificate_OZiva.pdf",
-      "issueDate" : "2025-01-28"
+      "testing_date" : "2025-01-28"
     }, {
       "name" : "TurmXTRA 60 N Water Dispersible Turmeric Extract Powder 60N",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/20250325_CLP-Certificate_Nutriventia-Ltd.pdf",
-      "issueDate" : "2025-03-25"
+      "testing_date" : "2025-03-25"
     }, {
       "name" : "Prolanza Ashwagandha Root Extract Granules SR",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/20250325_CLP-Certificate_Nutriventia-Ltd.pdf",
-      "issueDate" : "2025-03-25"
+      "testing_date" : "2025-03-25"
     }, {
       "name" : "Organic Plant Protein",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/20250128_CLP-Certificate_OZiva.pdf",
-      "issueDate" : "2025-01-28"
+      "testing_date" : "2025-01-28"
     }, {
       "name" : "Superfood Plant Protein",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/20250128_CLP-Certificate_OZiva.pdf",
-      "issueDate" : "2025-01-28"
+      "testing_date" : "2025-01-28"
     } ]
   },
   "health & fitness" : {
     "expired" : [ {
       "name" : "HK Vitals Fish Oil 1000 mg Capsules (Maxcure Nutravedics Ltd)",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/20241216_CLP-Certificate_BrightLifecare.pdf",
-      "issueDate" : "2023-12-12"
+      "testing_date" : "2023-12-12"
     }, {
       "name" : "Pure Himalayan Shilajit Gummies, 75% 60ct",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/20241218_CLP-Certificate_Mosaic.pdf",
-      "issueDate" : "2024-12-18"
+      "testing_date" : "2024-12-18"
     }, {
       "name" : "Apple Cider Effervescent Tablet",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/20250108_CLP-Certificate_Plix-Life.pdf",
-      "issueDate" : "2025-01-08"
+      "testing_date" : "2025-01-08"
     }, {
       "name" : "Vegan Collagen Pro Unflavored",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/securepdfs/20241217_CLP-Certificate_NutritionaLab-1.pdf",
-      "issueDate" : "2024-12-17"
+      "testing_date" : "2024-12-17"
     }, {
       "name" : "Pure Himalayan Shilajit Gummies, 75% 120ct",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/20241218_CLP-Certificate_Mosaic.pdf",
-      "issueDate" : "2024-12-18"
+      "testing_date" : "2024-12-18"
     }, {
       "name" : "Superfood Plant Protein – Italian Café Mocha",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/securepdfs/20241217_CLP-Certificate_NutritionaLab-1.pdf",
-      "issueDate" : "2024-12-17"
+      "testing_date" : "2024-12-17"
     } ],
     "pass" : [ {
       "name" : "ACGcaps TSafe",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/securepdfs/20250805_CLP-Certificate_ACG-Capsules.pdf",
-      "issueDate" : "2025-08-05"
+      "testing_date" : "2025-08-05"
     }, {
       "name" : "Grantria – Punica Granatum Extract",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/20250116_CLP-Certificate_Zeus-Hygia-Lifesciences.pdf",
-      "issueDate" : "2025-01-16"
+      "testing_date" : "2025-01-16"
     }, {
       "name" : "ACGCAPS™ H+",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/securepdfs/20250805_CLP-Certificate_ACG-Capsules.pdf",
-      "issueDate" : "2025-08-05"
+      "testing_date" : "2025-08-05"
     }, {
       "name" : "Whey Protein Powder",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/20250325_CLP-Certificate_Nutrabox.pdf",
-      "issueDate" : "2025-03-25"
+      "testing_date" : "2025-03-25"
     }, {
       "name" : "True Vitamin Tablets",
       "link" : "https://cleanlabelproject.org/wp-content/uploads/20250113_CLP-Certificate_Neuherbs.pdf",
-      "issueDate" : "2025-01-13"
+      "testing_date" : "2025-01-13"
     } ]
   }
 }

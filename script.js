@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("LetMeLive Script v1.4 Loaded");
     // Elements
     const searchInput = document.getElementById('searchInput');
     const resultsGrid = document.getElementById('resultsGrid');
@@ -20,15 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadData() {
         try {
             // Fetch all 3 JSONs in parallel
-            const [trustifiedRes, unboxRes, openRes] = await Promise.all([
-                fetch('trustified_data.json'),
-                fetch('unboxhealth_data.json'),
-                fetch('open_data.json')
+            const t = Date.now();
+            const [trustifiedRes, unboxRes, openRes, cleanLabelRes] = await Promise.all([
+                fetch(`trustified_data.json?t=${t}`),
+                fetch(`unboxhealth_data.json?t=${t}`),
+                fetch(`open_data.json?t=${t}`),
+                fetch(`india_clean_label_projects_products.json?t=${t}`)
             ]);
 
             const trustifiedData = await trustifiedRes.json();
             const unboxData = await unboxRes.json();
             const openData = await openRes.json();
+            const cleanLabelData = await cleanLabelRes.json();
 
             // Normalize Trustified
             const trustifiedNormalized = normalizeTrustified(trustifiedData);
@@ -39,8 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // Normalize Open Data
             const openNormalized = normalizeOpenData(openData);
 
+            // Normalize Clean Label Project
+            const cleanLabelNormalized = normalizeCleanLabel(cleanLabelData);
+
             // Combine
-            allProducts = [...trustifiedNormalized, ...unboxNormalized, ...openNormalized];
+            allProducts = [...trustifiedNormalized, ...unboxNormalized, ...openNormalized, ...cleanLabelNormalized];
 
             // Initial Render
             updateStats();
@@ -99,6 +106,43 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 });
             }
+        }
+        return products;
+    }
+
+    // Normalization Logic: Clean Label Project (similar to Trustified)
+    function normalizeCleanLabel(data) {
+        let products = [];
+        for (const [category, lists] of Object.entries(data)) {
+            const cleanCategory = category.replace(/&/g, '/').trim();
+
+            const processList = (list, status) => {
+                if (!list) return;
+                list.forEach(p => {
+                    // Try to extract brand from link if name is generic
+                    let displayName = p.name;
+                    if (p.link && p.link.includes('_')) {
+                        const parts = p.link.split('_');
+                        const brandPart = parts[parts.length - 1].split('.')[0].replace(/-/g, ' ');
+                        if (brandPart && !displayName.toLowerCase().includes(brandPart.toLowerCase())) {
+                            displayName = `${brandPart.charAt(0).toUpperCase() + brandPart.slice(1)} ${displayName}`;
+                        }
+                    }
+
+                    products.push({
+                        name: displayName,
+                        source: 'Clean Label Project',
+                        category: cleanCategory,
+                        status: status,
+                        link: p.link,
+                        testing_date: p.testing_date || null
+                    });
+                });
+            };
+
+            processList(lists.pass, 'pass');
+            processList(lists.expired, 'pending');
+            processList(lists.fail, 'fail');
         }
         return products;
     }
@@ -276,9 +320,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span class="status-dot"></span> ${statusLabel}
                 </div>
 
-                ${p.testing_date ? `<div class="card-date">Report Date: ${p.testing_date}</div>` : ''}
+                ${p.testing_date && p.testing_date !== 'null' ? `<div class="card-date">Report Date: ${formatDate(p.testing_date)}</div>` : ''}
 
-                <a href="${p.link}" target="_blank" class="view-btn">${btnText}</a>
+                <div class="card-footer">
+                    <span class="card-source">${p.source}</span>
+                    <a href="${p.link}" target="_blank" class="view-btn">${btnText}</a>
+                </div>
             `;
             resultsGrid.appendChild(card);
         });
@@ -491,6 +538,59 @@ document.addEventListener('DOMContentLoaded', () => {
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
     });
+
+    // 5. Utilities
+    function formatDate(dateStr) {
+        if (!dateStr || dateStr.toLowerCase() === 'null') return '';
+
+        const originalDate = dateStr.trim();
+        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        const fullMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        // Normalize separators
+        const parts = originalDate.split(/[\s./-]+/).filter(Boolean);
+        if (parts.length < 3) return originalDate; // Return as-is if we can't parse
+
+        let day, monthIdx = -1, year;
+
+        // 1. Find Month
+        for (let i = 0; i < parts.length; i++) {
+            const p = parts[i].toLowerCase();
+            const mIdx = months.findIndex(m => m.toLowerCase() === p) !== -1 ?
+                months.findIndex(m => m.toLowerCase() === p) :
+                fullMonths.findIndex(m => m.toLowerCase() === p);
+
+            if (mIdx !== -1) {
+                monthIdx = mIdx;
+                // Heuristic: Day is usually before month, Year is after
+                if (i === 1) { day = parts[0]; year = parts[2]; }
+                else if (i === 0) { day = parts[1]; year = parts[2]; }
+                break;
+            }
+        }
+
+        // 2. Numeric Fallback
+        if (monthIdx === -1) {
+            let p0 = parseInt(parts[0]);
+            let p1 = parseInt(parts[1]);
+            let p2 = parseInt(parts[2]);
+
+            if (p0 > 2000) { year = p0; monthIdx = p1 - 1; day = p2; }
+            else if (p2 > 2000) {
+                year = p2;
+                // Default to DD-MM-YYYY (India) unless month seems like p0
+                if (p0 > 12) { day = p0; monthIdx = p1 - 1; }
+                else { day = p0; monthIdx = p1 - 1; }
+            }
+        }
+
+        if (monthIdx >= 0 && monthIdx < 12 && day && year) {
+            const cleanDay = day.toString().replace(/(st|nd|rd|th)/, '').padStart(2, '0');
+            return `${cleanDay} ${months[monthIdx]} ${year}`;
+        }
+
+        return originalDate;
+    }
 
     // Init
     loadData();

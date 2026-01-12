@@ -523,6 +523,22 @@ h1.glitch::after {
     opacity: 0.8;
 }
 
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.card-source {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}
+
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -562,22 +578,23 @@ h1.glitch::after {
 }
 
 .view-btn {
-    display: block;
-    width: 100%;
-    margin-top: 1rem;
-    padding: 0.8rem;
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
     background: rgba(255, 255, 255, 0.05);
     border: none;
     border-radius: 8px;
     color: var(--text-main);
     text-align: center;
     text-decoration: none;
-    font-size: 0.9rem;
-    transition: background 0.2s;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .view-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
 }
 
 /* Loader */
