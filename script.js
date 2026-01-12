@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("LetMeLive Script v1.4 Loaded");
+    console.log("LetMeLive Script v1.5 Loaded");
     // Elements
     const searchInput = document.getElementById('searchInput');
     const resultsGrid = document.getElementById('resultsGrid');
@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Fetch all 3 JSONs in parallel
             const t = Date.now();
             const [trustifiedRes, unboxRes, openRes, cleanLabelRes] = await Promise.all([
-                fetch(`trustified_data.json?t=${t}`),
-                fetch(`unboxhealth_data.json?t=${t}`),
-                fetch(`open_data.json?t=${t}`),
-                fetch(`india_clean_label_projects_products.json?t=${t}`)
+                fetch(`jsons/trustified_data.json?t=${t}`),
+                fetch(`jsons/unboxhealth_data.json?t=${t}`),
+                fetch(`jsons/open_data.json?t=${t}`),
+                fetch(`jsons/india_clean_label_projects_products.json?t=${t}`)
             ]);
 
             const trustifiedData = await trustifiedRes.json();
@@ -230,7 +230,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         category: category,
                         status: 'pass',
                         link: p.link,
-                        testing_date: p.testing_date || null
+                        testing_date: p.testing_date || null,
+                        video: p.video || null
                     });
                 });
             }
@@ -243,7 +244,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         category: category,
                         status: 'fail',
                         link: p.link,
-                        testing_date: p.testing_date || null
+                        testing_date: p.testing_date || null,
+                        video: p.video || null
                     });
                 });
             }
@@ -256,7 +258,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         category: category,
                         status: 'pending',
                         link: p.link,
-                        testing_date: p.testing_date || null
+                        testing_date: p.testing_date || null,
+                        video: p.video || null
                     });
                 });
             }
@@ -324,7 +327,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 <div class="card-footer">
                     <span class="card-source">${p.source}</span>
-                    <a href="${p.link}" target="_blank" class="view-btn">${btnText}</a>
+                    <div class="card-actions">
+                        ${p.video ? `<a href="${p.video}" target="_blank" class="view-btn video-btn">Watch Video</a>` : ''}
+                        <a href="${p.link}" target="_blank" class="view-btn">View Report</a>
+                    </div>
                 </div>
             `;
             resultsGrid.appendChild(card);
