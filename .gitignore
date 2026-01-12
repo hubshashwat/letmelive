@@ -18,5 +18,5 @@ env/
 .DS_Store
 Thumbs.db
 
-trustified_scraper.py
-unbox_scraper.py
+scrapers/
+.idea/
