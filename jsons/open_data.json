@@ -14,7 +14,7 @@
         ]
     },
     "egg": {
-        "pass": [
+        "fail": [
             {
                 "name": "Eggoz",
                 "link": "https://drive.google.com/drive/folders/10Y3BGCo1oSRHc0nASWP0268HYEat_mCQ",
