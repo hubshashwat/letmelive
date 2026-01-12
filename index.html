@@ -9,138 +9,138 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
-            rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<div class="background-glob"></div>
-<div class="background-grid"></div>
-<div id="cursor-glow"></div>
+    <div class="background-glob"></div>
+    <div class="background-grid"></div>
+    <div id="cursor-glow"></div>
 
-<main class="container">
+    <main class="container">
 
-    <!-- Header Section -->
-    <header class="hero">
-        <h1 class="glitch" data-text="LetMeLive">LetMeLive</h1>
-        <p class="subtitle">Open Food Safety Database</p>
+        <!-- Header Section -->
+        <header class="hero">
+            <h1 class="glitch" data-text="LetMeLive">LetMeLive</h1>
+            <p class="subtitle">Open Food Safety Database</p>
 
-        <div class="search-container glass-panel">
-            <input type="text" id="searchInput"
-                   placeholder="Search for brands, products (e.g., 'MuscleBlaze', 'Ghee')..." autocomplete="off">
-            <div class="search-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                     stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
+            <div class="search-container glass-panel">
+                <input type="text" id="searchInput"
+                    placeholder="Search for brands, products (e.g., 'MuscleBlaze', 'Ghee')..." autocomplete="off">
+                <div class="search-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
             </div>
-        </div>
 
-        <!-- Removed Filters -->
-    </header>
+            <!-- Removed Filters -->
+        </header>
 
-    <!-- Disclaimer Modal -->
-    <div id="disclaimerModal" class="modal-overlay">
-        <div class="modal-content glass-panel">
-            <div class="modal-header">
-                <h2>⚠️ DISCLAIMER: READ BEFORE USING</h2>
-            </div>
-            <div class="modal-body">
-                <p><strong>1. We Are Not a Lab:</strong> This project does <strong>not</strong> conduct independent
-                    lab testing. We only aggregate publicly available test reports from NABL-accredited labs,
-                    consumer organizations, and regulatory bodies.</p>
-                <p><strong>2. No Liability:</strong> The maintainers of this repository are not liable for the
-                    accuracy of the third-party reports, nor for any changes in product formulation or batch
-                    quality.</p>
-                <p><strong>3. Verify the Source:</strong> Every entry in our database includes a direct link to the
-                    original report. Users should always verify the latest status with the original source before
-                    making consumption decisions.</p>
-                <p><strong>4. Batch Specificity:</strong> Food safety results are often batch-specific. A "Fail" for
-                    one batch does not necessarily imply the entire brand is unsafe forever.</p>
+        <!-- Disclaimer Modal -->
+        <div id="disclaimerModal" class="modal-overlay">
+            <div class="modal-content glass-panel">
+                <div class="modal-header">
+                    <h2>⚠️ DISCLAIMER: READ BEFORE USING</h2>
+                </div>
+                <div class="modal-body">
+                    <p><strong>1. We Are Not a Lab:</strong> This project does <strong>not</strong> conduct independent
+                        lab testing. We only aggregate publicly available test reports from NABL-accredited labs,
+                        consumer organizations, and regulatory bodies.</p>
+                    <p><strong>2. No Liability:</strong> The maintainers of this repository are not liable for the
+                        accuracy of the third-party reports, nor for any changes in product formulation or batch
+                        quality.</p>
+                    <p><strong>3. Verify the Source:</strong> Every entry in our database includes a direct link to the
+                        original report. Users should always verify the latest status with the original source before
+                        making consumption decisions.</p>
+                    <p><strong>4. Batch Specificity:</strong> Food safety results are often batch-specific. A "Fail" for
+                        one batch does not necessarily imply the entire brand is unsafe forever.</p>
 
-                <hr class="modal-divider">
+                    <hr class="modal-divider">
 
-                <h3>🎯 The Mission</h3>
-                <p>Finding safe food in India is hard. Lab reports are scattered across PDFs, YouTube videos, and
-                    paywalled magazines. <strong>LetMeLive</strong> centralizes this data into a simple, open-source
-                    JSON database that anyone can query, audit, or build apps upon.</p>
+                    <h3>🎯 The Mission</h3>
+                    <p>Finding safe food in India is hard. Lab reports are scattered across PDFs, YouTube videos, and
+                        paywalled magazines. <strong>LetMeLive</strong> centralizes this data into a simple, open-source
+                        JSON database that anyone can query, audit, or build apps upon.</p>
 
-                <h3>📂 Data Sources</h3>
-                <ul class="source-list">
-                    <li>Trustified (Supplements & Health Foods)</li>
-                    <li>Unbox Health (Packaged Foods)</li>
-                    <li>The Liver Doc (Herbal & Ayurvedic Safety)</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button id="acceptDisclaimer" class="view-btn">I Understand & Agree</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Stats Section -->
-    <!-- Stats Section with Chart -->
-    <section class="stats-container">
-        <div class="chart-wrapper">
-            <div class="pie-chart" id="statsChart">
-                <div class="chart-center">
-                    <span id="totalProducts">0</span>
-                    <small>Total</small>
+                    <h3>📂 Data Sources</h3>
+                    <ul class="source-list">
+                        <li>Trustified (Supplements & Health Foods)</li>
+                        <li>Unbox Health (Packaged Foods)</li>
+                        <li>The Liver Doc (Herbal & Ayurvedic Safety)</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button id="acceptDisclaimer" class="view-btn">I Understand & Agree</button>
                 </div>
             </div>
         </div>
 
-        <div class="stats-legend">
-            <div class="legend-item">
-                <span class="dot text-green-bg"></span>
-                <div class="legend-text">
-                    <span class="l-count" id="safeProducts">0</span>
-                    <span class="l-label">Safe / Pass</span>
+        <!-- Stats Section -->
+        <!-- Stats Section with Chart -->
+        <section class="stats-container">
+            <div class="chart-wrapper">
+                <div class="pie-chart" id="statsChart">
+                    <div class="chart-center">
+                        <span id="totalProducts">0</span>
+                        <small>Total</small>
+                    </div>
                 </div>
             </div>
-            <div class="legend-item">
-                <span class="dot text-amber-bg"></span>
-                <div class="legend-text">
-                    <span class="l-count" id="notHealthyProducts">0</span>
-                    <span class="l-label">Not Healthy</span>
+
+            <div class="stats-legend">
+                <div class="legend-item">
+                    <span class="dot text-green-bg"></span>
+                    <div class="legend-text">
+                        <span class="l-count" id="safeProducts">0</span>
+                        <span class="l-label">Safe / Pass</span>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <span class="dot text-amber-bg"></span>
+                    <div class="legend-text">
+                        <span class="l-count" id="notHealthyProducts">0</span>
+                        <span class="l-label">Not Healthy</span>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <span class="dot text-red-bg"></span>
+                    <div class="legend-text">
+                        <span class="l-count" id="unsafeProducts">0</span>
+                        <span class="l-label">Fail / Hazard</span>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <span class="dot text-blue-bg"></span>
+                    <div class="legend-text">
+                        <span class="l-count" id="pendingProducts">0</span>
+                        <span class="l-label">Expired</span>
+                    </div>
                 </div>
             </div>
-            <div class="legend-item">
-                <span class="dot text-red-bg"></span>
-                <div class="legend-text">
-                    <span class="l-count" id="unsafeProducts">0</span>
-                    <span class="l-label">Fail / Hazard</span>
-                </div>
-            </div>
-            <div class="legend-item">
-                <span class="dot text-blue-bg"></span>
-                <div class="legend-text">
-                    <span class="l-count" id="pendingProducts">0</span>
-                    <span class="l-label">Under Review</span>
-                </div>
+        </section>
+
+        <!-- Results Grid -->
+        <div id="resultsGrid" class="results-grid">
+            <!-- Cards will be injected here via JS -->
+            <div class="loading-state">
+                <div class="loader"></div>
+                <p>Establishing Uplink to Truth Database...</p>
             </div>
         </div>
-    </section>
 
-    <!-- Results Grid -->
-    <div id="resultsGrid" class="results-grid">
-        <!-- Cards will be injected here via JS -->
-        <div class="loading-state">
-            <div class="loader"></div>
-            <p>Establishing Uplink to Truth Database...</p>
-        </div>
-    </div>
+    </main>
 
-</main>
+    <footer>
+        <p>Data aggregated from public sources. Verify with original test reports. <a
+                href="https://github.com/hubshashwat/letmelive" target="_blank">Open Source.</a></p>
+    </footer>
 
-<footer>
-    <p>Data aggregated from public sources. Verify with original test reports. <a
-            href="https://github.com/hubshashwat/letmelive" target="_blank">Open Source.</a></p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

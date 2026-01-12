@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Fetch all 3 JSONs in parallel
             const [trustifiedRes, unboxRes, openRes] = await Promise.all([
                 fetch('trustified_data.json'),
-                fetch('unbox_data.json'),
+                fetch('unboxhealth_data.json'),
                 fetch('open_data.json')
             ]);
 
@@ -145,6 +145,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 });
             }
+
+            // EXPIRED (if any)
+            if (lists.expired) {
+                lists.expired.forEach(p => {
+                    products.push({
+                        name: p.name,
+                        source: 'UnboxHealth',
+                        category: cleanCategory,
+                        status: 'pending',
+                        link: p.link
+                    });
+                });
+            }
         }
         return products;
     }
@@ -222,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 statusLabel = 'FAILED TEST';
                 btnText = 'View Failure Report';
             } else if (p.status === 'pending') {
-                statusLabel = 'UNDER REVIEW';
+                statusLabel = 'EXPIRED';
             } else if (p.status === 'not_healthy') {
                 statusLabel = 'NOT HEALTHY';
                 btnText = 'View Analysis';
@@ -280,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { percentage: safeP, color: '#00ffa3', status: 'pass', label: 'Safe/Pass' },
                 { percentage: notHealthyP, color: '#ffb700', status: 'not_healthy', label: 'Not Healthy' },
                 { percentage: failP, color: '#ff4d4d', status: 'fail', label: 'Fail/Hazard' },
-                { percentage: pendingP, color: '#00d2ff', status: 'pending', label: 'Under Review' }
+                { percentage: pendingP, color: '#00d2ff', status: 'pending', label: 'Expired' }
             ]);
         }
     }
@@ -317,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
             path.setAttribute('data-status', segment.status);
 
             // Click to filter
-            path.addEventListener('click', function() {
+            path.addEventListener('click', function () {
                 filterByStatus(segment.status);
             });
 
@@ -335,7 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add click listener to center to reset filter (if not already added)
         const centerDiv = chart.querySelector('.chart-center');
         if (centerDiv && !centerDiv.hasAttribute('data-click-listener')) {
-            centerDiv.addEventListener('click', function() {
+            centerDiv.addEventListener('click', function () {
                 activeFilter = 'all';
                 searchInput.value = '';
                 filterData();
