@@ -620,15 +620,15 @@ h1.glitch::after {
     color: var(--text-muted);
 }
 
-/* Footer */
-footer {
+/* Top Info (Previously Footer) */
+.top-info {
     text-align: center;
-    padding: 3rem;
+    padding-bottom: 2rem;
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
-footer a {
+.top-info a {
     color: var(--text-main);
     text-decoration: none;
     border-bottom: 1px dotted var(--text-muted);

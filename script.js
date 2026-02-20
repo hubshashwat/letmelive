@@ -250,6 +250,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
 
+            if (lists.not_healthy) {
+                lists.not_healthy.forEach(p => {
+                    products.push({
+                        name: p.name,
+                        source: p.source || 'Open Data',
+                        category: category,
+                        status: 'not_healthy',
+                        link: p.link,
+                        testing_date: p.testing_date || null,
+                        video: p.video || null
+                    });
+                });
+            }
+
             if (lists.expired) {
                 lists.expired.forEach(p => {
                     products.push({

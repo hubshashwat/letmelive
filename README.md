@@ -23,7 +23,7 @@ Finding safe food in India is hard. Lab reports are scattered across PDFs, YouTu
 We aggregate **factual data** (Brand Name, Pass/Fail Status, Batch Number) from the following public sources:
 * **Trustified** (Supplements & Health Foods)
 * **Unbox Health** (Packaged Foods)
-* **The Liver Doc** (Herbal & Ayurvedic Safety)
+* **Clean Label Project** (Purity Awards)
 
 ## 🤝 How to Contribute
 
@@ -39,15 +39,14 @@ Please follow this JSON structure when adding new products:
       {
         "name": "Brand Name - Product Name",
         "link": "https://link-to-public-lab-report.com",
-        "source": "Lab Name / Organization"
+        "source": "Lab Name / Organization",
+        "testing_date": "DD MMM YYYY (Optional)",
+        "video": "https://youtube.com/watch?v=... (Optional)"
       }
     ],
-    "fail": [{
-        "name": "Brand Name - Product Name",
-        "link": "https://link-to-public-lab-report.com",
-        "source": "Lab Name / Organization"
-      }],
-    "not_healthy": []
+    "fail": [],
+    "not_healthy": [],
+    "expired": []
   }
 }
 ```
